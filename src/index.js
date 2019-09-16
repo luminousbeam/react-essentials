@@ -8,21 +8,21 @@ let skiData = {
   goal: 100
 }
 
-const SkiDayCounter = (props) => {
+const SkiDayCounter = ({ total, powder, backcountry, goal }) => {
   return (
     <section>
       <h1>Ski Days</h1>
       <div>
-        <p>Total Days: {props.total}</p>
+        <p>Total Days: {total}</p>
       </div>
       <div>
-        <p>Powder Days: {props.powder}</p>
+        <p>Powder Days: {powder}</p>
       </div>
       <div>
-        <p>Backcountry Days: {props.backcountry}</p>
+        <p>Backcountry Days: {backcountry}</p>
       </div>
       <div>
-        <p>Goal Progress: {props.goal}</p>
+        <p>Goal Progress: {goal}</p>
       </div>
     </section>
   )
