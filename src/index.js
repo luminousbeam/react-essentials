@@ -12,13 +12,11 @@ var style = {
   color: 'white',
   fontFamily: 'Arial'
 }
-const title = React.createElement(
-  'h1',
-  {id: 'title', className: 'header', style: style},
-  'Hello World'
-)
 
 ReactDOM.render(
-  title,
+  <div style={style}>
+    <h1>Hello World!</h1>
+    <p>Glad you're here!</p>
+  </div>,
   document.getElementById('root')
 )
