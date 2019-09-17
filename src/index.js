@@ -96,34 +96,7 @@ class Library extends Component {
   }
 }
 
-// class FavoriteColorForm extends React.Component {
-//   state = { value: ''}
-//
-//   newColor = e => {
-//     this.setState({value: e.target.value})
-//   }
-//   submit = e => {
-//     console.log("New Color: " + this.state.value)
-//     e.preventDefault()
-//   }
-//
-//   render() {
-//     return(
-//       <form onSubmit={this.submit}>
-//         <label htmlFor="">
-//           Favorite Color
-//           <input
-//             type="color"
-//             onChange={this.newColor}/>
-//         </label>
-//         <button>Submit</button>
-//       </form>
-//     )
-//   }
-// }
-
 render(
   <Library books={bookList} />,
-  // <FavoriteColorForm />,
   document.getElementById('root')
 )
